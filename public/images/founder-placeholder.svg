@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Portrait placeholder for Emmanuel Abula">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect x="60" y="60" width="120" height="2" fill="#E8B923"/>
+  <circle cx="400" cy="380" r="110" fill="none" stroke="#A8A29A" stroke-width="2"/>
+  <path d="M250 720 C250 580 550 580 550 720 L550 820 L250 820 Z" fill="none" stroke="#A8A29A" stroke-width="2"/>
+  <text x="400" y="900" text-anchor="middle" fill="#D4CFC6" font-family="Georgia, serif" font-size="28" letter-spacing="4">PORTRAIT PLACEHOLDER</text>
+  <text x="400" y="940" text-anchor="middle" fill="#6E6A64" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">EMMANUEL ABULA</text>
+</svg>
