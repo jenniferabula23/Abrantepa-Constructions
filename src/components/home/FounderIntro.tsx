@@ -16,7 +16,7 @@ export function FounderIntro() {
               <img
                 src={founder.image}
                 alt={founder.imageAlt}
-                className="img-cover object-[center_15%]"
+                className="img-cover object-[center_20%]"
                 width={800}
                 height={1000}
                 loading="lazy"
