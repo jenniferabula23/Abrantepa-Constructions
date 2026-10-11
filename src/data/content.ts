@@ -1,6 +1,7 @@
 import type { SiteContent } from '@/types/content'
 import { services } from './services'
 import { projects } from './projects'
+import ceoPortrait from '../assets/ceo-portrait.jpg'
 
 export const siteContent: SiteContent = {
   company: {
@@ -123,7 +124,7 @@ export const siteContent: SiteContent = {
     body: 'Emmanuel Abula founded Abrantepa Constructions with a clear conviction: African homes deserve architectural futures that feel modern without becoming unfamiliar. His vision centres on creativity, thoughtful construction, and spaces that honour where they come from.',
     biographyNote:
       'Full biography forthcoming. Replace this placeholder with Emmanuel Abula’s approved professional narrative.',
-    image: '/images/ceo-emmanuel-abula.jpg',
+    image: ceoPortrait,
     imageAlt: 'Emmanuel Abula, Founder and CEO of Abrantepa Constructions, in a navy suit',
     cta: { label: 'Read More About Us', href: '/about' },
   },
