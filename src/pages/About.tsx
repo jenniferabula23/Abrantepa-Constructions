@@ -29,7 +29,7 @@ export function AboutPage() {
                 <img
                   src={founder.image}
                   alt={founder.imageAlt}
-                  className="img-cover object-[center_20%]"
+                  className="img-cover object-top"
                   width={800}
                   height={1000}
                   fetchPriority="high"
