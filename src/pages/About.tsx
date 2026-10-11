@@ -4,6 +4,7 @@ import { Reveal } from '@/components/ui/Reveal'
 import { CTASection } from '@/components/ui/CTASection'
 import { Button } from '@/components/ui/Button'
 import { PageHero } from '@/components/ui/PageHero'
+import { AccentBar } from '@/components/ui/AccentBar'
 
 export function AboutPage() {
   const { about, founder, company } = siteContent
@@ -15,6 +16,43 @@ export function AboutPage() {
         description="Learn about Abrantepa Constructions, founded by Emmanuel Abula, and our approach to modernizing African homes."
         path="/about"
       />
+
+      <section className="section-pad surface-textured-dark pt-28 text-warm-white md:pt-36">
+        <div className="container-wide grid items-center gap-12 lg:grid-cols-2">
+          <Reveal>
+            <div className="relative">
+              <div
+                className="accent-textured absolute -top-3 -left-3 h-full w-full"
+                aria-hidden="true"
+              />
+              <div className="relative aspect-[4/5] overflow-hidden bg-graphite">
+                <img
+                  src={founder.image}
+                  alt={founder.imageAlt}
+                  className="img-cover object-[center_20%]"
+                  width={800}
+                  height={1000}
+                  fetchPriority="high"
+                />
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="glass-panel-dark p-7 md:p-9">
+              <p className="eyebrow mb-5 text-stone">Founder and CEO</p>
+              <h1 className="headline-lg">{founder.name}</h1>
+              <p className="mt-2 text-sm tracking-[0.16em] text-sand uppercase">
+                {founder.title}, {company.name}
+              </p>
+              <p className="body-lg mt-6 text-sand">{founder.body}</p>
+              <p className="mt-4 text-sm text-stone italic">
+                {founder.biographyNote}
+              </p>
+            </div>
+          </Reveal>
+        </div>
+        <AccentBar className="mt-16 h-3" />
+      </section>
 
       <PageHero
         eyebrow={about.heroEyebrow}
@@ -51,39 +89,6 @@ export function AboutPage() {
                 {about.modernTouch.title}
               </h2>
               <p className="editorial mt-6 text-sand">{about.modernTouch.body}</p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="section-pad surface-textured-dark text-warm-white">
-        <div className="container-wide grid items-center gap-12 lg:grid-cols-2">
-          <Reveal>
-            <div className="relative">
-              <div className="accent-textured absolute -top-3 -left-3 h-full w-full" aria-hidden="true" />
-              <div className="relative aspect-[4/5] overflow-hidden bg-graphite">
-                <img
-                  src={founder.image}
-                  alt={founder.imageAlt}
-                  className="img-cover object-[center_20%]"
-                  width={800}
-                  height={1000}
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </Reveal>
-          <Reveal delay={100}>
-            <div className="glass-panel-dark p-7 md:p-9">
-              <p className="eyebrow mb-5 text-stone">Founder and CEO</p>
-              <h2 className="headline-lg">{founder.name}</h2>
-              <p className="mt-2 text-sm tracking-[0.16em] text-sand uppercase">
-                {founder.title}, {company.name}
-              </p>
-              <p className="body-lg mt-6 text-sand">{founder.body}</p>
-              <p className="mt-4 text-sm text-stone italic">
-                {founder.biographyNote}
-              </p>
             </div>
           </Reveal>
         </div>
